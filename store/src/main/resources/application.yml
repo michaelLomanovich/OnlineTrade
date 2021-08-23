@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/shop
+    driver-class-name: org.postgresql.Driver
+    username: shop
+    password: a42809c9-0e60-458e-b8d9-9de1b54df4cf
+    initialization-mode: always
+    platform: postgresql
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
+    default-schema: store
+  messages:
+    basename: messages/system
+    fallback-to-system-locale: false
+  web:
+    locale: ru_RU
+server:
+  servlet:
+    context-path: /store-server
+  port: 1488
+
+

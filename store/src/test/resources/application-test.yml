@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: ${DB_URL}
+    driver-class-name: org.postgresql.Driver
+    username: ${DB_USER_NAME}
+    password: ${DB_USER_PWD}
+    initialization-mode: always
+    platform: postgresql
+
+
